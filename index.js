@@ -292,8 +292,20 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
+function addArtist(arrayToEdit){
+/*Your Code Here*/
+  arrayToEdit.push(
+      { 
+        id: 20,
+        name: "Your Name Here", 
+        years: "Your Birth Year - current day",
+        genre: "Web Design", 
+        nationality: "Your Nationality Here",
+        bio: "Add 1-2 sentences (or use lorem ipsum)",
+        paintings: 0
+      }
+  )
+  return arrayToEdit;
   }
 
   
@@ -305,9 +317,19 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
+function lotsOfArt(arrayToCount){
+/*Your Code Here*/
+  let lotsOfPaintings = [];
+  for (let counts in arrayToCount) {
+  // for (let counts = 0; counts < arrayToCount.length; counts++){
+    if (arrayToCount[counts].paintings > 100) {
+      lotsOfPaintings.push(arrayToCount[counts].name);
+    }
+  }
+  return lotsOfPaintings;
 }
+
+console.log(lotsOfArt(artists));
 
 
 
@@ -334,11 +356,10 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
-function getHTML(/* Code here */){
+function getHTML(/* Code here */) {
 
-    /* Code here */
-
-  }
+  /* Code here */
+}
 
 
 /* 💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪
