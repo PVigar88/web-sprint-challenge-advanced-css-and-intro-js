@@ -327,7 +327,7 @@ function lotsOfArt(arrayToCount){
     }
   }
   return lotsOfPaintings;
-}
+} 
 
 console.log(lotsOfArt(artists));
 
